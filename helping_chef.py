@@ -1,16 +1,10 @@
-def check(n):
-    if(n < 10):
-        return "Thanks for helping the Chef!"
-    else:
-       return -1
+def main():
+    res = []
+    T = int(input(""))
+    for i in range(T):
+        x = int(input(""))
+        res.append("Thanks for helping the chef" if (x < 10) else -1)
+    for i in res:
+        print(i)
 
-
-res = []
-T = int(input(""))
-
-for i in range(T):
-    x = int(input(""))
-    res.append(check(x))
-
-for i in res:
-    print(i)
+main()
