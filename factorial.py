@@ -10,13 +10,15 @@ def fact(num):
 
 
 
+def main():
+    T = int(input(""))
+    res = []
 
-T = int(input(""))
-res = []
+    for i in range(T):
+        x = int(input(""))
+        res.append(fact(x))
 
-for i in range(T):
-    x = int(input(""))
-    res.append(fact(x))
+    for i in res:
+        print(i)
 
-for i in res:
-    print(i)
+main()
